@@ -19,16 +19,14 @@ I want to learn Front-End Development in RS School
 
 ## Code Example:
 
-```
+```javascript
 function filterHomogenous(arrays) {
   const isHomogenous = (arr) => {
     const types = arr.map((elem) => typeof elem);
     const [firstType] = types;
     return types.every((type) => firstType === type);
-  }
-  return arrays
-    .filter((arr) => arr.length > 0)
-    .filter(isHomogenous);
+  };
+  return arrays.filter((arr) => arr.length > 0).filter(isHomogenous);
 }
 ```
 
