@@ -4,7 +4,7 @@
 
 **E-mail:** [perfil.nika@gmail.com](mailto:perfil.nika@gmail.com)\
 **Discord:** bbngpw\
-**GitHub:** [bbngpw](https://github.com/bbngpw)\
+**GitHub:** [bbngpw](https://github.com/bbngpw)
 
 ## About Me:
 
