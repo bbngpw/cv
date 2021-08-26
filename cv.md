@@ -19,7 +19,8 @@ I want to learn Front-End Development in RS School
 
 ## Code Example:
 
-```function filterHomogenous(arrays) {
+```
+function filterHomogenous(arrays) {
   const isHomogenous = (arr) => {
     const types = arr.map((elem) => typeof elem);
     const [firstType] = types;
