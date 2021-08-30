@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RSSchool CV</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
-    <header>
+    <header class="container flex-container">
       <div class="column_wide">
-        <h1>
-          Nika Perfilova
-          <span>Frontend Developer</span>
+        <h1 class="flex-container">
+          <span><b>Nika</b> Perfilova</span>
+          <span class="job-title">Frontend Developer</span>
         </h1>
         <p></p>
       </div>
       <ul class="contacts column_narrow">
-        <li>
-          <span>E-mail</span
-          ><a href="mailto:perfil.nika@gmail.com">perfil.nika@gmail.com</a>
-        </li>
-        <li>
-          <span>GitHub</span><a href="https://github.com/bbngpw">bbngpw</a>
-        </li>
+        <li><span>E-mail</span><a href="mailto:perfil.nika@gmail.com">perfil.nika@gmail.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/bbngpw">bbngpw</a></li>
         <li><span>Discord</span>bbngpw</li>
         <li><span>Location</span>Minusinsk, Russia</li>
       </ul>
     </header>
 
-    <main>
+    <main class="container">
       <section class="experience">
-        <h2>Experience</h2>
+        <h2 class="flex-container">
+          Experience
+          <!-- FIXME: temporary solution for apdaptive decorative line -->
+          <hr />
+        </h2>
         <ul>
-          <li>
+          <li class="flex-container">
             <div class="column_narrow">
               <h3>QA Engineer</h3>
-              <p>2020 - 2021</p>
+              <p><time>2020</time> - <time>2021</time></p>
             </div>
             <div class="column_wide">
               <h4>Atomic Software, Tomsk, Russia</h4>
@@ -46,13 +52,11 @@
               <p>job description</p>
             </div>
           </li>
-          <li>
+          <li class="flex-container">
             <div class="column_narrow">
               <h3>brain-games</h3>
               <p>
-                <a href="https://github.com/bbngpw/frontend-project-lvl1"
-                  >GitHub link</a
-                >
+                <a href="https://github.com/bbngpw/frontend-project-lvl1">GitHub link</a>
               </p>
             </div>
             <div class="column_wide">
@@ -61,21 +65,19 @@
               <p>A set of five console games.</p>
             </div>
           </li>
-          <li>
+          <li class="flex-container">
             <div class="column_narrow">
               <h3>gendiff</h3>
               <p>
-                <a href="https://github.com/bbngpw/frontend-project-lvl2"
-                  >GitHub link</a
-                >
+                <a href="https://github.com/bbngpw/frontend-project-lvl2">GitHub link</a>
               </p>
             </div>
             <div class="column_wide">
               <h4>Educational project</h4>
               <!-- TODO: edit gendiff description -->
               <p>
-                A console app which compares two files (json, yaml) and prints
-                changes using selected mode.
+                A console app which compares two files (json, yaml) and prints changes using
+                selected mode.
               </p>
             </div>
           </li>
@@ -83,44 +85,42 @@
       </section>
 
       <section class="education">
-        <h2>Education</h2>
+        <h2 class="flex-container">
+          Education
+          <!-- FIXME: temporary solution for apdaptive decorative line -->
+          <hr />
+        </h2>
         <ul>
-          <li>
+          <li class="flex-container">
             <div class="column_narrow">
               <h3>Applied Informatics in Economics</h3>
-              <p>2019 - 2024</p>
+              <p><time>2019</time> - <time>2024</time></p>
             </div>
             <div class="column_wide">
               <h4>
                 <a href="https://tusur.ru/"
-                  >Tomsk State University of Control Systems and
-                  Radioelectronics</a
+                  >Tomsk State University of Control Systems and Radioelectronics</a
                 >
               </h4>
               <p>Tomsk, Russia</p>
-              <!-- FIX: choose better phrasing -->
+              <!-- FIXME: choose better phrasing -->
               <p>Bachelor degree</p>
             </div>
           </li>
-          <li>
+          <li class="flex-container">
             <div class="column_narrow">
               <h3>Online courses at <a href="hexlet.io">Hexlet</a></h3>
-              <p>2021</p>
+              <p><time>2021</time></p>
             </div>
             <div class="column_wide">
-              <p>
-                Finished 13 courses and 2 projects in the Frontend Developer
-                program.
-              </p>
+              <p>Finished 13 courses and 2 projects in the Frontend Developer program.</p>
               <a href="https://ru.hexlet.io/u/bbngpw">Profile link</a>
             </div>
           </li>
-          <li>
+          <li class="flex-container">
             <div class="column_narrow">
-              <h3>
-                Online courses at <a href="htmlacademy.ru">HTML Academy</a>
-              </h3>
-              <p>2020 - 2021</p>
+              <h3>Online courses at <a href="htmlacademy.ru">HTML Academy</a></h3>
+              <p><time>2020</time> - <time>2021</time></p>
             </div>
             <div class="column_wide">
               <p>Finished 56 interactive HTML, CSS and JavaScript courses.</p>
@@ -130,37 +130,32 @@
         </ul>
       </section>
 
-      <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-        </ul>
-      </section>
-
-      <section class="languages">
-        <h2>Languages</h2>
-        <ul>
-          <!-- TODO: how to link a certificate here -->
-          <li>English <span>C1 Advanced</span></li>
-          <li>Russian <span>Native</span></li>
-        </ul>
-      </section>
+      <div class="flex-container">
+        <section class="skills column_narrow">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section class="languages column_wide">
+          <h2>Languages</h2>
+          <ul>
+            <!-- TODO: how to link a certificate here -->
+            <li>English <span>C1 Advanced</span></li>
+            <li>Russian <span>Native</span></li>
+          </ul>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <a href="https://github.com/bbngpw" title="GitHub profile"
-        >GitHub profile</a
-      >
-      2021
+    <footer class="container">
+      <a href="https://github.com/bbngpw" title="GitHub profile">GitHub profile</a>
+      <time>2021</time>
       <!-- FIX: logo width/height -->
       <a href="https://rs.school/js/">
-        <img
-          src="https://rs.school/images/rs_school_js.svg"
-          alt="RS School Logo"
-          width="100"
-        />
+        <img src="https://rs.school/images/rs_school_js.svg" alt="RS School Logo" width="100" />
       </a>
     </footer>
   </body>
