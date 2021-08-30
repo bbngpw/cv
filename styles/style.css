@@ -133,10 +133,6 @@ header p {
   margin-bottom: 19px;
 }
 
-.contacts li:last-child {
-  margin-bottom: 0;
-}
-
 .contacts .icon {
   position: absolute;
   top: -4px;
@@ -172,6 +168,10 @@ header p {
 }
 
 /*** Content ***/
+
+section {
+  margin-bottom: 100px;
+}
 
 h2 {
   font-weight: 900;
@@ -247,4 +247,48 @@ time {
   text-transform: uppercase;
 }
 
+.skills li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.skills .progress-bar {
+  position: relative;
+
+  flex-basis: 247px;
+  height: 7px;
+
+  border-bottom: rgba(36, 39, 50, 0.4) solid 4px;
+}
+
+.skills .progress-bar::before {
+  position: absolute;
+  right: 0;
+
+  height: 7px;
+
+  background-color: var(--headings-primary-color);
+
+  content: "";
+}
+
+.skills .progress-bar[data-width="0.8"]::before {
+  width: 80%;
+}
+
+.skills .progress-bar[data-width="0.3"]::before {
+  width: 30%;
+}
+
+.skills .progress-bar[data-width="0.4"]::before {
+  width: 40%;
+}
+
 /*** Footer ***/
+
+li:last-child {
+  margin-bottom: 0;
+}
