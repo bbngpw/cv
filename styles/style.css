@@ -287,6 +287,23 @@ time {
   width: 40%;
 }
 
+.languages {
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.languages li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.languages .level {
+  font-weight: 700;
+  font-size: 30px;
+}
+
 /*** Footer ***/
 
 li:last-child {
