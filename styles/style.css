@@ -55,15 +55,13 @@ body {
 }
 
 .column_narrow {
-  flex-basis: 40%;
-  max-width: 432px;
+  flex-basis: 432px;
 
   text-align: right;
 }
 
 .column_wide {
-  flex-basis: 60%;
-  max-width: 864px;
+  flex-basis: 864px;
 }
 
 /*** Header ***/
@@ -120,10 +118,10 @@ h2 {
   content: "";
 } */
 
-h2 hr {
+h2 .decorative-line {
   position: relative;
 
-  flex-basis: 60%;
+  flex-basis: 864px;
 
   height: 4px;
   margin: 0;
@@ -134,7 +132,7 @@ h2 hr {
   background-color: rgba(36, 39, 50, 0.4);
 }
 
-h2 hr::before {
+h2 .decorative-line::before {
   position: absolute;
   bottom: 0;
 
