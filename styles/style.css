@@ -7,6 +7,7 @@
 
 ul {
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 
   list-style: none;
@@ -66,6 +67,11 @@ body {
 
 /*** Header ***/
 
+header.flex-container {
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
 header .column_narrow {
   order: 1;
 }
@@ -76,6 +82,7 @@ header .column_wide {
 
 h1 {
   flex-direction: column;
+  margin-top: 200px;
 
   color: var(--headings-primary-color);
   font-weight: 400;
@@ -88,6 +95,8 @@ h1 b {
 }
 
 h1 .job-title {
+  padding-top: 20px;
+
   color: var(--header-secondary-color);
   font-weight: 500;
   font-size: 27px;
@@ -96,6 +105,70 @@ h1 .job-title {
 
 header p {
   color: var(--header-secondary-color);
+}
+
+.contacts {
+  position: relative;
+
+  padding-top: 300px;
+  padding-right: 52px;
+}
+
+.contacts::before {
+  position: absolute;
+  right: 19px;
+  bottom: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background-color: #b8b8b8;
+
+  content: "";
+}
+
+.contacts li {
+  position: relative;
+
+  margin-bottom: 19px;
+}
+
+.contacts li:last-child {
+  margin-bottom: 0;
+}
+
+.contacts .icon {
+  position: absolute;
+  top: -4px;
+  right: -52px;
+
+  width: 41px;
+  height: 41px;
+  border: #b8b8b8 solid 3px;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
+}
+
+.contacts .email {
+  background-image: url("../images/icons/mail-icon.svg");
+}
+
+.contacts .github {
+  background-image: url("../images/icons/github-icon.svg");
+}
+
+.contacts .discord {
+  background-image: url("../images/icons/discord-icon.svg");
+}
+
+.contacts .location {
+  background-image: url("../images/icons/address-icon.svg");
 }
 
 /*** Content ***/
