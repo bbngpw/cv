@@ -221,6 +221,8 @@ h3,
 h4 {
   font-weight: 400;
   font-size: 27px;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
 }
 
 .education h3 {
@@ -234,6 +236,8 @@ h4 {
 
 section p {
   color: var(--content-secondary-color);
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
 }
 
 time {
