@@ -1,0 +1,415 @@
+/*** Reset ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*** Colors ***/
+
+:root {
+  --headings-primary-color: #242732;
+  --header-secondary-color: #4f4f4f;
+  --content-primary-color: #333333;
+  --content-secondary-color: #666666;
+  --content-auxiliary-color: #999999;
+}
+
+/*** General styles ***/
+
+body {
+  margin: 0;
+
+  color: var(--content-primary-color);
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.column_narrow {
+  flex-basis: 30%;
+
+  text-align: right;
+}
+
+.column_wide {
+  flex-basis: 60%;
+}
+
+/*** Header ***/
+
+header.flex-container {
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+header .column_narrow {
+  position: relative;
+
+  order: 1;
+}
+
+header .column_wide {
+  order: 2;
+}
+
+h1 {
+  flex-direction: column;
+  margin-top: 200px;
+  margin-bottom: 0;
+
+  color: var(--headings-primary-color);
+  font-weight: 400;
+  font-size: 67px;
+  text-transform: uppercase;
+}
+
+h1 b {
+  letter-spacing: 0.17em;
+}
+
+h1 .job-title {
+  padding-top: 20px;
+
+  color: var(--header-secondary-color);
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 42px;
+}
+
+header p {
+  color: var(--header-secondary-color);
+}
+
+.profile-photo {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.contacts {
+  position: relative;
+
+  padding-top: 370px;
+  padding-right: 52px;
+}
+
+.contacts::before {
+  position: absolute;
+  right: 19px;
+  bottom: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background-color: #b8b8b8;
+
+  content: "";
+}
+
+.contacts li {
+  position: relative;
+
+  margin-bottom: 19px;
+}
+
+.contacts .icon {
+  position: absolute;
+  top: -4px;
+  right: -52px;
+
+  width: 41px;
+  height: 41px;
+  border: #b8b8b8 solid 3px;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
+}
+
+.contacts .email {
+  background-image: url("../images/icons/mail-icon.svg");
+}
+
+.contacts .github {
+  background-image: url("../images/icons/github-icon.svg");
+}
+
+.contacts .discord {
+  background-image: url("../images/icons/discord-icon.svg");
+}
+
+.contacts .location {
+  background-image: url("../images/icons/address-icon.svg");
+}
+
+/*** Content ***/
+
+section {
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.title-container h2 {
+  flex-basis: 30%;
+
+  text-align: right;
+}
+
+/*** Previous non-adaptive solution for decorative line ***/
+
+/* h2::after {
+  flex-basis: 60%;
+  height: 8px;
+
+  background-color: var(--headings-primary-color);
+
+  content: "";
+} */
+
+.decorative-line {
+  position: relative;
+
+  flex-basis: 60%;
+
+  height: 4px;
+  margin: 0;
+
+  border: none;
+  overflow: visible;
+
+  background-color: rgba(36, 39, 50, 0.4);
+}
+
+.decorative-line::before {
+  position: absolute;
+  bottom: 0;
+
+  width: 35%;
+  height: 7px;
+
+  background-color: var(--headings-primary-color);
+
+  content: "";
+}
+
+h3,
+h4 {
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+
+  font-weight: 400;
+  font-size: 27px;
+}
+
+.education h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.education h4 {
+  font-size: 22px;
+}
+
+section p {
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+
+  color: var(--content-secondary-color);
+}
+
+section a {
+  position: relative;
+
+  padding-right: 1.3em;
+}
+
+section a::after {
+  position: absolute;
+  top: 0.2em;
+  right: 0;
+
+  width: 1em;
+  height: 1em;
+
+  background-image: url("../images/icons/link-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em;
+
+  content: "";
+}
+
+time {
+  color: var(--content-auxiliary-color);
+  font-size: 20px;
+}
+
+.skills {
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.skills h2 {
+  text-align: right;
+}
+
+.skills ul,
+.languages ul {
+  padding-top: 1.33em;
+}
+
+.skills li {
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.skills .skill {
+  flex-basis: 30%;
+}
+
+.skills .progress-bar {
+  position: relative;
+
+  flex-basis: 60%;
+  height: 7px;
+
+  border-bottom: rgba(36, 39, 50, 0.4) solid 4px;
+}
+
+.skills .progress-bar::before {
+  position: absolute;
+  right: 0;
+
+  height: 7px;
+
+  background-color: var(--headings-primary-color);
+
+  content: "";
+}
+
+.skills .progress-bar[data-width="0.8"]::before {
+  width: 80%;
+}
+
+.skills .progress-bar[data-width="0.3"]::before {
+  width: 30%;
+}
+
+.skills .progress-bar[data-width="0.4"]::before {
+  width: 40%;
+}
+
+.languages {
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.languages li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.languages .level {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/*** Footer ***/
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.footer .link {
+  display: block;
+  margin: 0 10px;
+
+  font-size: 0;
+}
+
+.footer .rsschool {
+  width: 150px;
+  aspect-ratio: 73 / 27;
+
+  margin-bottom: 30px;
+
+  background-image: url("https://rs.school/images/rs_school_js.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+}
+
+.footer .github {
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../images/icons/github-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.footer .author {
+  align-items: center;
+
+  color: var(--content-auxiliary-color);
+}
+
+.footer .author p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
