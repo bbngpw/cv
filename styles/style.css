@@ -23,9 +23,9 @@ a {
 :root {
   --headings-primary-color: #242732;
   --header-secondary-color: #4f4f4f;
-  --content-primary-color: #333;
-  --content-secondary-color: #666;
-  --content-auxiliary-color: #999;
+  --content-primary-color: #333333;
+  --content-secondary-color: #666666;
+  --content-auxiliary-color: #999999;
 }
 
 /*** General styles ***/
@@ -36,10 +36,10 @@ body {
   color: var(--content-primary-color);
   font-size: 22px;
   font-family: "Roboto Slab", serif;
-  line-height: 1.325;
+  line-height: 1.33;
   letter-spacing: 0.03em;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .container {
@@ -92,7 +92,7 @@ h1 {
 }
 
 h1 b {
-  letter-spacing: 0.165em;
+  letter-spacing: 0.17em;
 }
 
 h1 .job-title {
@@ -146,7 +146,7 @@ header p {
 
   font-size: 0;
 
-  background-color: #fff;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 21px;
@@ -177,7 +177,7 @@ section {
 h2 {
   font-weight: 900;
   font-size: 40px;
-  letter-spacing: 0.105em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
