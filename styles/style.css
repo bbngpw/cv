@@ -219,10 +219,11 @@ h2 .decorative-line::before {
 
 h3,
 h4 {
-  font-weight: 400;
-  font-size: 27px;
   margin-top: 1.33em;
   margin-bottom: 1.33em;
+
+  font-weight: 400;
+  font-size: 27px;
 }
 
 .education h3 {
@@ -235,9 +236,32 @@ h4 {
 }
 
 section p {
-  color: var(--content-secondary-color);
   margin-top: 1.33em;
   margin-bottom: 1.33em;
+
+  color: var(--content-secondary-color);
+}
+
+section a {
+  position: relative;
+
+  padding-right: 1.3em;
+}
+
+section a::after {
+  position: absolute;
+  top: 0.2em;
+  right: 0;
+
+  width: 1em;
+  height: 1em;
+
+  background-image: url("../images/icons/link-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em;
+
+  content: "";
 }
 
 time {
