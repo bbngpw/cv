@@ -52,17 +52,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .column_narrow {
-  flex-basis: 432px;
+  flex-basis: 30%;
 
   text-align: right;
 }
 
 .column_wide {
-  flex-basis: 864px;
+  flex-basis: 60%;
 }
 
 /*** Header ***/
@@ -193,6 +193,12 @@ h2 {
   text-transform: uppercase;
 }
 
+.title-container h2 {
+  flex-basis: 30%;
+
+  text-align: right;
+}
+
 /*** Previous non-adaptive solution for decorative line ***/
 
 /* h2::after {
@@ -204,10 +210,10 @@ h2 {
   content: "";
 } */
 
-h2 .decorative-line {
+.decorative-line {
   position: relative;
 
-  flex-basis: 864px;
+  flex-basis: 60%;
 
   height: 4px;
   margin: 0;
@@ -218,7 +224,7 @@ h2 .decorative-line {
   background-color: rgba(36, 39, 50, 0.4);
 }
 
-h2 .decorative-line::before {
+.decorative-line::before {
   position: absolute;
   bottom: 0;
 
@@ -288,23 +294,28 @@ time {
   text-transform: uppercase;
 }
 
+.skills h2 {
+  text-align: right;
+}
+
 .skills ul,
 .languages ul {
   padding-top: 1.33em;
 }
 
 .skills li {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 27px;
+}
+
+.skills .skill {
+  flex-basis: 30%;
 }
 
 .skills .progress-bar {
   position: relative;
 
-  flex-basis: 247px;
+  flex-basis: 60%;
   height: 7px;
 
   border-bottom: rgba(36, 39, 50, 0.4) solid 4px;
