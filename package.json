@@ -1,0 +1,28 @@
+{
+  "name": "rsschool-cv",
+  "version": "0.0.1",
+  "description": "cv task for rs school",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "htmlhint": "^0.14.2",
+    "stylelint": "^13.8.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "surge": "^0.21.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbngpw/rsschool-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbngpw/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/bbngpw/rsschool-cv#readme"
+}
