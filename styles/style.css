@@ -83,6 +83,7 @@ header .column_wide {
 h1 {
   flex-direction: column;
   margin-top: 200px;
+  margin-bottom: 0;
 
   color: var(--headings-primary-color);
   font-weight: 400;
@@ -273,6 +274,11 @@ time {
   font-size: 20px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+
+.skills ul,
+.languages ul {
+  padding-top: 1.33em;
 }
 
 .skills li {
