@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSSchool CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    <header class="container flex-container">
+      <div class="column_wide">
+        <h1 class="flex-container">
+          <span><b>Ника</b> Перфилова</span>
+          <span class="job-title">Frontend Разработчик</span>
+        </h1>
+        <p><!-- Здесь должен быть текст --></p>
+      </div>
+      <div class="column_narrow">
+        <!-- <img
+          class="profile-photo"
+          src="images/profile-pic.jpg"
+          alt="Profile photo"
+          width="250"
+          height="250"
+        /> -->
+        <ul class="contacts">
+          <li>
+            <a href="mailto:perfil.nika@gmail.com"
+              ><span class="icon email">E-mail</span>perfil.nika@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/bbngpw" target="_blank" rel="noopener noreferrer"
+              ><span class="icon github">GitHub</span>bbngpw</a
+            >
+          </li>
+          <!-- <li><span class="icon discord">Discord</span>@bbngpw</li> -->
+          <li>
+            <a href="https://t.me/nika_perfilova"
+              ><span class="icon telegram">Telegram</span>nika_perfilova</a
+            >
+          </li>
+          <li><span class="icon location">Location</span>Россия</li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="experience">
+        <div class="title-container flex-container">
+          <h2>Опыт</h2>
+          <!-- FIXME: temporary solution for apdaptive decorative line -->
+          <span class="decorative-line"></span>
+        </div>
+        <ul>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>brain-games</h3>
+              <p>
+                <a
+                  href="https://github.com/bbngpw/frontend-project-lvl1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </p>
+            </div>
+            <div class="column_wide">
+              <h4>Учебный мини-проект</h4>
+              <!-- TODO: add brain-games description -->
+              <p>
+                Консольное приложение, набор из пяти консольных игр. Может устанавиваться как
+                npm-пакет.
+              </p>
+            </div>
+          </li>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>gendiff</h3>
+              <p>
+                <a
+                  href="https://github.com/bbngpw/frontend-project-lvl2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </p>
+            </div>
+            <div class="column_wide">
+              <h4>Учебный мини-проект</h4>
+              <!-- TODO: edit gendiff description -->
+              <p>
+                Консольное приложение для сравнения двух структур данных (json, yaml). Находит
+                различия и выводит результат в одном из трех форматов. Для тестирования используется
+                jest.
+              </p>
+            </div>
+          </li>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>QA Engineer</h3>
+              <p><time>2020</time> - <time>2021</time></p>
+            </div>
+            <div class="column_wide">
+              <h4><a href="https://www.automiq.ru/">Атомик Софт (Томск, Россия)</a></h4>
+              <!-- TODO: add qa job description -->
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <div class="title-container flex-container">
+          <h2>Образование</h2>
+          <!-- FIXME: temporary solution for apdaptive decorative line -->
+          <span class="decorative-line"></span>
+        </div>
+        <ul>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>Прикладная информатика в экономике</h3>
+              <p><time>2019</time> - <time>2024</time></p>
+            </div>
+            <div class="column_wide">
+              <h4>
+                <a href="https://tusur.ru/" target="_blank" rel="noopener noreferrer"
+                  >Томский государственный университет систем управления и радиоэлектроники</a
+                >
+              </h4>
+              <p>Томск, Россия</p>
+              <p>Бакалавриат</p>
+            </div>
+          </li>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>ШРИ</h3>
+              <p><time>осень 2021</time></p>
+            </div>
+            <div class="column_wide">
+              <h4>
+                <a
+                  href="https://academy.yandex.ru/schools/frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Школа разработки интерфейсов, Яндекс</a
+                >
+              </h4>
+              <p></p>
+            </div>
+          </li>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>Онлайн-курсы</h3>
+              <p><time>2021</time></p>
+            </div>
+            <div class="column_wide">
+              <h4>
+                <a href="https://ru.hexlet.io/u/bbngpw" target="_blank" rel="noopener noreferrer"
+                  >Hexlet</a
+                >
+              </h4>
+              <p>Пройдено 13 курсов 2 проекта из программы Фронтенд-разработчик</p>
+            </div>
+          </li>
+          <li class="flex-container">
+            <div class="column_narrow">
+              <h3>Онлайн-курсы</h3>
+              <p><time>2020</time> - <time>2021</time></p>
+            </div>
+            <div class="column_wide">
+              <a
+                href="https://htmlacademy.ru/profile/id421001"
+                target="_blank"
+                rel="noopener noreferrer"
+                >HTML Academy</a
+              >
+              <p>Пройдено 56 HTML, CSS and JavaScript курсов.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="flex-container">
+        <section class="skills column_narrow">
+          <h2>Навыки</h2>
+          <ul>
+            <li class="flex-container">
+              <div class="progress-bar" data-progress="0.8"></div>
+              <div class="skill">HTML/CSS</div>
+            </li>
+            <li class="flex-container">
+              <div class="progress-bar" data-progress="0.4"></div>
+              <div class="skill">JavaScript</div>
+            </li>
+            <li class="flex-container">
+              <div class="progress-bar" data-progress="0.4"></div>
+              <div class="skill">Git</div>
+            </li>
+            <li class="flex-container">
+              <div class="progress-bar" data-progress="0.2"></div>
+              <div class="skill">React</div>
+            </li>
+          </ul>
+        </section>
+        <section class="languages column_wide">
+          <h2>Языки</h2>
+          <ul>
+            <!-- TODO: how to link a certificate here -->
+            <li>English <span class="level">C1 Advanced</span></li>
+            <li>Russian <span class="level">Native</span></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer container flex-container">
+      <p>Web-версия: <a href="https://bbngpw.github.io/cv/">https://bbngpw.github.io/cv/</a></p>
+
+      <div class="author flex-container">
+        <p><time>2021</time> Ника Перфилова</p>
+        <a
+          class="link github"
+          href="https://github.com/bbngpw"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
