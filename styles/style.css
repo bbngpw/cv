@@ -65,6 +65,16 @@ body {
   flex-basis: 60%;
 }
 
+a:hover {
+  color: var(--content-auxiliary-color);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--content-secondary-color);
+  text-decoration: underline;
+}
+
 /*** Header ***/
 
 header.flex-container {
