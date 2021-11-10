@@ -271,10 +271,10 @@ section a {
   padding-right: 1.3em;
 }
 
-/* section a::after {
+section a::after {
   position: absolute;
-  top: 0.2em;
   right: 0;
+  bottom: 0.2em;
 
   width: 1em;
   height: 1em;
@@ -285,7 +285,7 @@ section a {
   background-size: 1em;
 
   content: "";
-} */
+}
 
 time {
   color: var(--content-auxiliary-color);
