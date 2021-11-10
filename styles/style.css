@@ -123,7 +123,7 @@ header p {
 .contacts {
   position: relative;
 
-  padding-top: 370px;
+  padding-top: 300px;
   padding-right: 52px;
 }
 
@@ -332,16 +332,44 @@ time {
   content: "";
 }
 
-.skills .progress-bar[data-width="0.8"]::before {
+.skills .progress-bar[data-progress="1"]::before {
+  width: 100%;
+}
+
+.skills .progress-bar[data-progress="0.9"]::before {
+  width: 90%;
+}
+
+.skills .progress-bar[data-progress="0.8"]::before {
   width: 80%;
 }
 
-.skills .progress-bar[data-width="0.3"]::before {
+.skills .progress-bar[data-progress="0.7"]::before {
+  width: 70%;
+}
+
+.skills .progress-bar[data-progress="0.6"]::before {
+  width: 60%;
+}
+
+.skills .progress-bar[data-progress="0.5"]::before {
+  width: 50%;
+}
+
+.skills .progress-bar[data-progress="0.4"]::before {
+  width: 40%;
+}
+
+.skills .progress-bar[data-progress="0.3"]::before {
   width: 30%;
 }
 
-.skills .progress-bar[data-width="0.4"]::before {
-  width: 40%;
+.skills .progress-bar[data-progress="0.2"]::before {
+  width: 20%;
+}
+
+.skills .progress-bar[data-progress="0.1"]::before {
+  width: 10%;
 }
 
 .languages {
