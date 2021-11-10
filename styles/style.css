@@ -176,6 +176,10 @@ header p {
   background-image: url("../images/icons/discord-icon.svg");
 }
 
+.contacts .telegram {
+  background-image: url("../images/icons/telegram-icon.webp");
+}
+
 .contacts .location {
   background-image: url("../images/icons/address-icon.svg");
 }
@@ -267,7 +271,7 @@ section a {
   padding-right: 1.3em;
 }
 
-section a::after {
+/* section a::after {
   position: absolute;
   top: 0.2em;
   right: 0;
@@ -281,7 +285,7 @@ section a::after {
   background-size: 1em;
 
   content: "";
-}
+} */
 
 time {
   color: var(--content-auxiliary-color);
