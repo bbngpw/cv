@@ -176,6 +176,10 @@ header p {
   background-image: url("../images/icons/discord-icon.svg");
 }
 
+.contacts .telegram {
+  background-image: url("../images/icons/telegram-icon.webp");
+}
+
 .contacts .location {
   background-image: url("../images/icons/address-icon.svg");
 }
